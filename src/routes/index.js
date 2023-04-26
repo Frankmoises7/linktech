@@ -62,7 +62,7 @@ router.get('/logout', function(req, res, next) {
 
 router.post('/shortUrls', async (req, res) => {
   await ShortUrl.create({ full: req.body.fullUrl })
-  res.redirect('/')
+  res.redirect('/home')
 })
 
 app.get('/:shortUrl', async (req, res) => {
