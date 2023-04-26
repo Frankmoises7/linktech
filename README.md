@@ -42,5 +42,5 @@ npm run start
 - El enlace corto generado se mostrará en la página de inicio.
 - Al hacer clic en el enlace corto, se redireccionará a la URL original.
 
-## Desarollado
+## Desarrollado
 Por Frank Islas
