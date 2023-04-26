@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.101.0">
+  <title>LinkTech</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/product/">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark site-header">
+    <a class="navbar-brand" href="/">LinkTech <span>.</span> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+      aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample04">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active ">
+          <a class="nav-link" href="home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="home">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="home">Servicios</a>
+        </li>
+      </ul>
+      <a href="/register" class="btn btn-outline-warning my-2 my-md-0">Registrate</a>
+    </div>
+  </nav>
+
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+      <h1 class="title display-4 font-weight-normal"> Iniciar Sesion<span class="font-weight-bold">.</span>
+      </h1>
+      <% if (message) { %>
+        <div class="alerta"><%= message %></div>
+      <% } %>
+      <form class="needs-validation" action="/login" novalidate method="POST">
+        
+        <div class="form-group text-left">
+          <label for="validationCustom01">Email</label>
+          <input type="email" class="form-control" name="email" id="validationCustom01" aria-describedby="emailHelp" placeholder="pedrito.pascal@mail.com" required>
+          <div class="invalid-feedback">
+            Porfavor ingresa tu email.
+          </div>
+          <div class="valid-feedback">
+            Se ve bien!
+          </div>
+        </div>
+        
+        <div class="form-group text-left">
+          <label for="validationCustom02">Password</label>
+          <input type="password" class="form-control" name="password" id="validationCustom02" placeholder="********" required>
+          <div class="invalid-feedback">
+            Por favor ingresa tu contraseña.
+          </div>
+          <div class="valid-feedback">
+            Se ve bien!
+          </div>
+        </div>
+        <button type="submit" class="btn btn-warning">Ingresar</button>     
+        <button type="button" class="btn btn-info"><a href="register">Registrate</a></button>     
+      </form>
+
+    </div>
+  </div>
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Link Tech<span>.</span></h3>
+              <p>
+                José Miguel Carrera 1701 <br>
+                Antofagasta, Chile <br><br>
+                <strong>Telefono:</strong> +56 9999999<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="uil uil-twitter"></i></a>
+                <a href="#" class="facebook"><i class="uil uil-facebook-f"></i></i></a>
+                <a href="#" class="instagram"><i class="uil uil-instagram"></i></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Principal</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Contactanos</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Servicios</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Términos de servicio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Políticas de privacidad</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Nuestro servicios</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Servicio 1</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Servicio 2</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Servicio 3</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Subscribete</h4>
+            <p>Si quieres recibir nuestra mejores actualizaciones, registrate abajo</p>
+            <form action="" method="">
+              <input type="email" name="email"><input type="submit" value="Suscribirse">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  <!-- Creditos -->
+    <div class="container">
+      <div class="copyright">
+        &copy; All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed whit Love ❤️ by <a href="https://www.linkedin.com/in/frankmoises7/" target="
+        "> Frank Islas <i class="uil uil-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/scripts.js"></script>
+</body>
+
+</html>
