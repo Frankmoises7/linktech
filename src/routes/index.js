@@ -49,7 +49,7 @@ router.post('/login', passport.authenticate('local-signin', {
   failureFlash: true,
 }));
 
-router.get('/home',isAuthenticated, (req, res, next) => {
+router.get('/home',ensureAuthenticated, (req, res, next) => {
   res.render('home');
 });
 
@@ -78,12 +78,5 @@ router.get('*', (req, res) => {
   res.render('404')
 })
 
-function isAuthenticated(req, res, next) {
-  if(req.isAuthenticated()) {
-    return next();
-  }
-
-  res.redirect('/')
-}
 
 module.exports = router;
